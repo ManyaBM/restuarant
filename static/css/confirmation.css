@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("food.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.links {
+    /* Center links */
+    text-align: center;
+    font-weight: bolder;
+}
+
+.links a {
+    /* Add space between links */
+    margin: 0 10px;
+}

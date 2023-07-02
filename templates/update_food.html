@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Update food</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+{% endblock %}
+{% block body %}
+<h1>Update Food</h1>
+<form method="POST" action="{{ url_for('update_food', food_id=food.id) }}">
+    <input type="hidden" name="_method" value="PUT">
+    <label for="name">Name:</label> <input type="text" name="name" value="{{ food.name }}">
+    <br>
+    <br>
+    <label for="country">Country:</label> <input type="text" name="country" value="{{ food.country }}">
+    <br>
+    <br>
+    <label for="type">Type:</label> <input type="text" name="type" value="{{ food.type }}">
+    <br>
+    <br>
+    <label for="price">Price:</label> <input type="number" name="price" value="{{ food.price }}">
+    <br>
+    <br>
+    <input type="submit" value="Save">
+</form>
+{% endblock%}

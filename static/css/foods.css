@@ -1,0 +1,60 @@
+body {
+    /* Change background gradient colors */
+    background: linear-gradient(to bottom right,#d53369, #cbad6d);
+    /* Make sure the background covers the entire page */
+    min-height: 100vh;
+}
+
+table {
+    /* Add 2px border and center table */
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th,
+td {
+    /* Add 2px border to table cells */
+    border: 2px solid black;
+    padding: 8px;
+}
+
+h1 {
+    /* Center h1 */
+    text-align: center;
+}
+
+.delete-button {
+    /* Style DELETE button */
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.update-button {
+    /* Style UPDATE button */
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.delete-button:hover,
+.update-button:hover {
+    /* Add hover effect to buttons */
+    opacity: 0.5;
+    transition: 1s;
+}
+
+#home-link {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
